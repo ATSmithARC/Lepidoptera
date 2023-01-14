@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <script src="nav-ui.js"></script>
+    <title>Lepidoptera Map</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="howto.html">How to</a>
+        <a href="login.html">Log in</a>
+        <div class="dropdown">
+          <div class="active">
+            <button class="dropbtn">
+              Maps
+              <i class="fa fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="dropdown-content">
+            <a href="map.html">Species Occurence</a>
+            <a href="map.html">Environment</a>
+            <a href="map.html">Terrain</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
+    </section>
+    <section class="mapbox">
+      <style>
+        #debug {
+          position: relative;
+          padding: 15px;
+        }
+      </style>
+
+      <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+      <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
+      <link
+        rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.css"
+        type="text/css"
+      />
+
+      <div id="map"></div>
+      <nav id="filter-group" class="filter-group"></nav>
+      <div class="map-overlay">
+        <fieldset>
+          <input
+            id="feature-filter"
+            type="text"
+            placeholder="Filter visible results by name"
+          />
+        </fieldset>
+        <div id="feature-listing" class="listing"></div>
+      </div>
+
+      <script type="text/javascript" src="mapbox.js"></script>
+    </section>
+    <div id="debug"></div>
+  </body>
+</html>
