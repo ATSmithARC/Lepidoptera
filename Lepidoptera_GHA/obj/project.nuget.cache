@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZsE8PIiTCEQ7vFu0pjpC+4umsQb1+xIhg4Sxpk26RkFlK7g0px4ePDpWh3i04Hq3av++vMRA6jN53i+Hz9R0Jw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ATSmi\\source\\repos\\Lepidoptera_GHA\\Lepidoptera_GHA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ATSmi\\.nuget\\packages\\grasshopper\\7.24.22308.15001\\grasshopper.7.24.22308.15001.nupkg.sha512",
+    "C:\\Users\\ATSmi\\.nuget\\packages\\rhinocommon\\7.24.22308.15001\\rhinocommon.7.24.22308.15001.nupkg.sha512"
+  ],
+  "logs": []
+}
