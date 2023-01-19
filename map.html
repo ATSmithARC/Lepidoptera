@@ -11,10 +11,27 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.1.min.js"
+      integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <script src="https://unpkg.com/mapbox-gl-draw-waypoint@1.0.3/dist/mapbox-gl-draw-waypoint.min.js"></script>
     <script src="nav-ui.js"></script>
     <title>Lepidoptera Map</title>
   </head>
+
   <body>
     <section class="navbar">
       <div class="topnav" id="myTopnav">
@@ -40,15 +57,8 @@
         >
       </div>
     </section>
-    <section class="mapbox">
-      <style>
-        #debug {
-          position: relative;
-          padding: 15px;
-        }
-      </style>
 
-      <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <section class="mapbox">
       <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
       <link
         rel="stylesheet"
@@ -57,20 +67,75 @@
       />
 
       <div id="map"></div>
-      <nav id="filter-group" class="filter-group"></nav>
+
+      <div class="box">
+        <a class="button" href="#">Let me Pop up</a>
+      </div>
+
+      <div id="how-to" class="overlay">
+        <div class="how-to">
+          <h2>About Map:</h2>
+          <a class="close" href="#how-to">×</a>
+          <div class="popupcontent">
+            Green dots indicate
+            <a href="https://www.gbif.org/dataset/search?type=OCCURRENCE"
+              >Species Occurences.</a
+            >
+            <br /> To access them: <br />
+            <br />
+            1.) Select the Polygon tool in the upper-right corner. <br />
+            <br />
+            2.) Click the map to begin drawing a search permieter using points.
+            <br />
+            <br />
+            3.) Double-click to place the final point, and begin searching.
+          </div>
+        </div>
+      </div>
+
+      <div class="lds-grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">></button>
+        <h2>Collapsed Sidebar</h2>
+        <p>Content...</p>
+      </div>
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><</a>
+       <h2>
+         Filters
+        </h2> 
+        <nav id="filter-group" class="filter-group"></nav>
+
       <div class="map-overlay">
         <fieldset>
           <input
             id="feature-filter"
             type="text"
-            placeholder="Filter visible results by name"
+            placeholder="Filter visible results by name..."
           />
         </fieldset>
         <div id="feature-listing" class="listing"></div>
       </div>
 
+      
+      </div>
+
+      
       <script type="text/javascript" src="mapbox.js"></script>
     </section>
+
     <div id="debug"></div>
   </body>
 </html>

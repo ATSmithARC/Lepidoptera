@@ -87,7 +87,7 @@ h2 {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 150;
 }
 
 /* Style the links inside the dropdown */
@@ -185,7 +185,7 @@ h2 {
 .video-container video {
   min-width: 100%;
   min-height: 100%;
-  object-fit: cover;
+  object-fit: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -238,37 +238,42 @@ h2 {
 }
 
 .content {
-  z-index: 10;
+  z-index: 100;
 }
 
+/*
 .mapbox {
   height: 100%;
 }
+*/
 
 #map {
   position: absolute;
   height: 100%;
   width: 100%;
+  z-index: 25;
 }
 
 .map-overlay {
-  position: absolute;
-  width: 35%;
-  top: 70px;
+  position: relative;
+  width: 90%;
+  top: 5px;
   bottom: 0;
-  left: 0;
+  left: 0px;
   margin: 10px;
   font: 8px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
-  background-color: rgba(255, 255, 255, 0.9);
-  max-height: 100%;
-  overflow: hidden;
+  max-height: 40%;
+  overflow: auto;
+  z-index: 360;
+  
 }
 
 .map-overlay fieldset {
-  display: none;
-  background: #ddd;
-  border: none;
-  padding: 10px;
+  position: relative;
+  z-index: 452;
+  border: #ddd;
+  
+  padding: 5px;
   margin: 0;
 }
 
@@ -277,7 +282,7 @@ h2 {
   border: none;
   width: 100%;
   border-radius: 3px;
-  padding: 10px;
+  padding: 5px;
   margin: 0;
   box-sizing: border-box;
 }
@@ -297,6 +302,7 @@ h2 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   color: #404;
   text-decoration: none;
+  font-size: 11px;
 }
 
 .map-overlay .listing a:last-child {
@@ -317,12 +323,12 @@ p {
   font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 600;
   position: absolute;
-  top: 200px;
-  right: 10px;
-  z-index: 1;
+  top: 65%;
+  left: 10px;
   border-radius: 3px;
-  width: 120px;
+  width: 90%;
   color: #fff;
+  z-index: 351;
 }
 
 .filter-group input[type="checkbox"]:first-child + label {
@@ -342,21 +348,291 @@ p {
   background-color: #04aa6d;
   display: block;
   cursor: pointer;
-  padding: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  border-style: dotted;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  color: #000000;
 }
 
 .filter-group input[type="checkbox"] + label {
-  background-color: #04aa6d;
+  background-color: rgba(255, 255, 255, 0.9);
   text-transform: capitalize;
+  color: #000000;
 }
 
-.filter-group input[type="checkbox"] + label:hover,
+.filter-group input[type="checkbox"] + label:hover {
+  background-color: rgba(130, 213, 182, 0.9);
+  color: #000000;
+}
+
 .filter-group input[type="checkbox"]:checked + label {
-  background-color: #17bd80;
+  background-color: rgba(4, 170, 109, 0.9);
+  color: #000000;
 }
 
 .filter-group input[type="checkbox"]:checked + label:before {
   content: "✔";
   margin-right: 5px;
+  color: #000000;
 }
+
+.lds-grid {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80px;
+  height: 80px;
+  z-index: 5000;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #04aa6d;
+  animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  display: block;
+  position: absolute; /* Stay in place */
+  z-index: 220; /* Stay on top */
+  left: 0;
+  top: 60px;
+  background-color: rgba(255, 255, 255, 1.0); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  overflow: clip;
+}
+
+/* The sidebar links */
+.sidebar h2 {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 3px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  z-index: 210;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: var(--primary-color);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid orange;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: orange;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  z-index: 4000;
+}
+
+.overlay:target {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+.how-to {
+  position: relative;
+  top: 20%;
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 280px;
+  transition: all 5s ease-in-out;
+  z-index: 3999;
+  line-height: 14px;
+  color: var(--primary-color);
+}
+
+.how-to .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
+  z-index: 3998;
+}
+
+.how-to .close:hover {
+  color: #04aa6d;
+}
+
+.how-to .pupupcontent {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.how-to h2 { 
+  margin-top: 0; 
+  color: var(--primary-color); 
+  font-family: Tahoma, Arial, sans-serif; 
+  font-size: 30px;
+}
+
+.how-to a {
+   color: #04aa6d;
+   text-decoration: underline;
+}
+
+

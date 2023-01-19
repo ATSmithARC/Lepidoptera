@@ -6,6 +6,15 @@
     <title>Lepidoptera How-To</title>
     <link rel="stylesheet" href="style.css">
     <script src="nav-ui.js"></script>
+    
+    <script>
+      if (location.protocol != "https:") {
+        location.href =
+          "https:" +
+          window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+    
   </head>
   <body>
     <section class="navbar">
