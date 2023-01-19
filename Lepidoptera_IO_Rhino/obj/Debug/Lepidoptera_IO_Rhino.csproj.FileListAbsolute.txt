@@ -1,0 +1,15 @@
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Lepidoptera_IO_Rhino.dll
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Lepidoptera_IO_Rhino.pdb
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Lepidoptera.dll
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Mono.Cecil.dll
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Lepidoptera.pdb
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Lepidoptera.dll.config
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\obj\Debug\Lepidoptera_IO_Rhino.csproj.AssemblyReference.cache
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\obj\Debug\Lepidoptera_IO_Rhino.csproj.CoreCompileInputs.cache
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\obj\Debug\Lepidoptera_IO_Rhino.csproj.CopyComplete
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\obj\Debug\Lepidoptera_IO_Rhino.dll
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\obj\Debug\Lepidoptera_IO_Rhino.pdb
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\GenericParsing.dll
+C:\Users\ATSmi\source\repos\Lepidoptera_IO_Rhino\bin\Debug\GenericParsing.xml
