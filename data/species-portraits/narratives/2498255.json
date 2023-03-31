@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "subject": "behavior",
+            "desc": "According to [1], Common Pochards are gregarious birds, forming massive flocks in winter, usually blended with different diving geese such because the tufted duck, with which they're recognized to hybridise. These birds feed primarily by diving or dabbling. They eat aquatic vegetation with some mollusks, aquatic bugs, and small fish. The adult male has a long dark bill with a grey band, a red head and neck, a black breast, red eyes and a grey back. The adult female has a brown head and body and a narrower grey bill-band. The triangular head shape is distinctive. Pochards are superficially similar to the closely related North American redhead and canvasback [2][3].",
+            "src": [
+                "https://www.birdbaron.com/common-pochard/",
+                "https://en.wikipedia.org/wiki/Common_pochard",
+                "https://animalia.bio/common-pochard",
+                "https://www.researchgate.net/publication/368510536_Diurnal_behaviour_of_the_Aythya_ferina_in_the_Tonga_Lake_Northeast_of_Algeria",
+                "https://en.wikipedia.org/wiki/Common_pochard"
+            ]
+        },
+        {
+            "subject": "habits",
+            "desc": "According to [1], Common Pochards are gregarious birds, forming large flocks in winter, often mixed with other diving ducks such as the tufted duck. These birds feed mainly by diving or dabbling. They eat aquatic plants with some molluscs, aquatic insects and small fish.",
+            "src": [
+                "https://animalia.bio/common-pochard",
+                "https://en.wikipedia.org/wiki/Common_pochard",
+                "https://www.birdbaron.com/common-pochard/"
+            ]
+        },
+        {
+            "subject": "nesting",
+            "desc": "According to [1], Common Pochards are monogamous and produce one brood a season. They nest on the ground in a shallow depression amongst vegetation, or on a platform over water. They nest amongst thick cover or emergent vegetation along the lake shore, usually laying between 8-10 eggs in May or June. The young hatch after about 25 days and are immediately able to swim and dive. After about 50 days they are able to fly.",
+            "src": [
+                "https://www.birdspot.co.uk/bird-identification/pochard",
+                "http://www.habitas.org.uk/priority/species.asp?item=137",
+                "https://en.wikipedia.org/wiki/Common_pochard",
+                "https://www.wildlifetrusts.org/wildlife-explorer/birds/waterfowl/pochard",
+                "https://www.rspb.org.uk/birds-and-wildlife/wildlife-guides/bird-a-z/pochard/"
+            ]
+        },
+        {
+            "subject": "breeding",
+            "desc": "According to [1], Common Pochards breed in much of temperate and northern Europe and across the Palearctic. Their breeding habitat consists of marshes and lakes with a meter or more water depth. They are migratory and spend winter within the south and west of Europe.",
+            "src": [
+                "https://en.wikipedia.org/wiki/Common_pochard",
+                "https://www.birdbaron.com/common-pochard/",
+                "https://animalia.bio/common-pochard",
+                "https://ebird.org/species/compoc/"
+            ]
+        },
+        {
+            "subject": "habitat",
+            "desc": "According to [1], Common Pochards breed in much of temperate and northern Europe and across the Palearctic. Their breeding habitat consists of marshes and lakes with a meter or more water depth. They are migratory and spend winter within the south and west of Europe. During the winter, the species frequents similar habitats to those it breeds in, including large lakes, slow-flowing rivers, reservoirs, brackish waters, marshes, weirs (Africa) and flooded gravel pits [2].",
+            "src": [
+                "https://en.wikipedia.org/wiki/Common_pochard",
+                "http://datazone.birdlife.org/species/factsheet/common-pochard-aythya-ferina/text",
+                "https://animalia.bio/common-pochard",
+                "https://www.birdbaron.com/common-pochard/",
+                "https://en.wikipedia.org/wiki/Common_pochard"
+            ]
+        },
+        {
+            "subject": "perception",
+            "desc": "I couldn't find any information on public perception of Common Pochard in urban areas. However, in a number of countries, the population of Common Pochard is decreasing mainly due to urbanization of the natural habitats and their transformation, as well as due to overhunting1. In some regions, Common Pochards may be appreciated for their ecological and aesthetic value, especially among bird watchers and nature enthusiasts. However, they may also be viewed as a nuisance in certain areas, particularly if they congregate in large numbers in urban areas or cause damage to crops.",
+            "src": [
+                "https://en.wikipedia.org/wiki/Common_pochard",
+                "http://datazone.birdlife.org/species/factsheet/common-pochard-aythya-ferina/text",
+                "https://www.bto.org/ai/pdfs/76move.pdf"
+            ]
+        },
+        {
+            "subject": "culture",
+            "desc": "I couldn't find any information on cultural significance of Aythya ferina. However, ducks are symbolic of diversity, simplicity, clarity, intuition, and vigilance. These birds have a peaceful and friendly spirit that makes them popular wherever they go. Due to this, and the fact that they're found in every part of the world, ducks have been mentioned in various cultures and mythologies of the world[1]",
+            "src": [
+                "https://www.sonomabirding.com/duck-symbolism/",
+                "http://datazone.birdlife.org/species/factsheet/common-pochard-aythya-ferina/text",
+                "https://en.wikipedia.org/wiki/Common_pochard",
+                "https://en.wikipedia.org/wiki/Aythya",
+                "https://www.atshq.org/duck-symbolism/",
+                "https://worldbirds.com/goose-symbolism/",
+                "https://en.wikipedia.org/wiki/Duck",
+                "https://www.richardalois.com/symbolism/duck-symbolism"
+            ]
+        },
+        {
+            "subject": "benefits",
+            "desc": "Ducks can be beneficial to humans in many ways. They are great for pest control, as they eat insects, slugs, and snails. They also help to control weeds by eating the seeds and seedlings. Ducks are also great for fertilizing gardens, as their manure is high in nitrogen and other nutrients. They can also be kept as pets and provide eggs and entertainment[1][2].",
+            "src": [
+                "https://www.petmd.com/bird/care/can-people-have-ducks-pets",
+                "https://www.hobbyfarms.com/7-things-to-know-before-keeping-ducks-in-the-city/",
+                "https://www.grit.com/animals/poultry/ducks/benefits-raising-ducks/"
+            ]
+        }
+    ]
+}
