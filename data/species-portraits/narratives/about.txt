@@ -1,2 +1,25 @@
 The species portrait narratives provide text descriptions for the characteristics of a particular species.
-This can include things like behavior, habits, and human perceptions of the species.
+The subjects of these descriptions can include things like behavior, habits, and human perceptions of the species.
+All descriptions include their sources as an array of URLs
+
+JSON Format Example:
+{
+  "data": [
+    {
+      "subject":"behavior",
+      "desc":"description of behavior[1][2]",
+      "src": [
+        "description source URL 1",
+        "description source URL 2",
+      ]
+    },
+    {
+      "subject":"habitat",
+      "desc":"description of habitat[1][2]",
+      "src": [
+        "description source URL 1",
+        "description source URL 2",
+      ]
+    }
+  ]
+}
